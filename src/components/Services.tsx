@@ -1,14 +1,38 @@
 import { Box, Container, Heading, SimpleGrid, Icon, Text, Stack, HStack, VStack } from "@chakra-ui/react";
 import { PiDogFill } from "react-icons/pi";
 
-// placeholder
-const services = Array.apply(null, Array(8)).map(function (x, i) {
-  return {
-    id: i,
-    title: "Lorem ipsum dolor sit amet",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.",
-  };
-});
+const services = [
+  {
+    id: 1,
+    title: "15 minutes |  $15",
+    text: "A quick lil walk, a drop in and play time, or whatever is needed.",
+  },
+  {
+    id: 2,
+    title: "20 minutes |  $18",
+    text: "A less quick lil walk, a drop in and play time, or whatever is needed.",
+  },
+  {
+    id: 3,
+    title: "30 minutes |  $20",
+    text: "The perfect amount of time for a good walk, water refresh, and mealtime!",
+  },
+  {
+    id: 4,
+    title: "Pet Taxi |  Starts at $30 (base fare per ride)",
+    text: "Includes 5 miles! $2 per additional mile. Transport for vet visits, grooming appointments, or wherever else!",
+  },
+  {
+    id: 5,
+    title: "Fun Outings | $65",
+    text: "1 hour of playtime adventure (includes travel fee). +$30 for extra 30 minutes.",
+  },
+  {
+    id: 6,
+    title: "Extras: +$5 per pet | +$4 nights & weekends",
+    text: "",
+  },
+];
 
 const Services = () => {
   return (
@@ -16,8 +40,7 @@ const Services = () => {
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading fontSize={"3xl"}>Our Services</Heading>
         <Text color={"gray.600"} fontSize={"xl"}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua.
+          Services include, but are not limited to, the following:
         </Text>
       </Stack>
 
