@@ -49,7 +49,7 @@ const NavBar = () => {
           <Stack as={"nav"} spacing={4}>
             {sections.map((section) => (
               <Link key={section.title} href={section.link}>
-                {section.link}
+                {section.title}
               </Link>
             ))}
           </Stack>
