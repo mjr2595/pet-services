@@ -5,17 +5,17 @@ const services = [
   {
     id: 1,
     title: "15 minutes |  $15",
-    text: "A quick lil walk, a drop in and play time, or whatever is needed.",
+    text: "A quick walk or drop-in visit. Your choice!",
   },
   {
     id: 2,
     title: "20 minutes |  $18",
-    text: "A less quick lil walk, a drop in and play time, or whatever is needed.",
+    text: "A schmedium-sized walk or drop-in visit. Your choice!",
   },
   {
     id: 3,
     title: "30 minutes |  $20",
-    text: "The perfect amount of time for a good walk, water refresh, and mealtime!",
+    text: "The perfect amount of time for a good walk, water refresh, and mealtime! Or a drop-in visit - Your choice!",
   },
   {
     id: 4,
