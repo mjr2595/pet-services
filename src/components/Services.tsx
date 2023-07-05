@@ -15,7 +15,7 @@ const services = [
   {
     id: 3,
     title: "30 minutes |  $20",
-    text: "The perfect amount of time for a good walk, water refresh, and mealtime! Or a drop-in visit - Your choice!",
+    text: "The perfect amount of time for a good walk, water refresh, and mealtime! Or a drop-in visit. Your choice!",
   },
   {
     id: 4,
