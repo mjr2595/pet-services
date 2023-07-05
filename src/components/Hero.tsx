@@ -1,4 +1,4 @@
-import { Container, Stack, Heading, Button, Flex, Text, Image } from "@chakra-ui/react";
+import { Container, Stack, Heading, Button, Flex, Text, Image, Link } from "@chakra-ui/react";
 import logo from "../assets/logo.png";
 
 const Hero = () => {
@@ -17,12 +17,16 @@ const Hero = () => {
           truly pampered.
         </Text>
         <Stack spacing={6} direction={"row"}>
-          <Button rounded={"full"} px={6} bg={"#BCD9FE"} _hover={{ bg: "#FF65C3" }}>
-            Book a service!
-          </Button>
-          <Button rounded={"full"} px={6}>
-            Learn more
-          </Button>
+          <Link href="#contact">
+            <Button rounded={"full"} px={6} bg={"#BCD9FE"} _hover={{ bg: "#FF65C3" }}>
+              Book a service!
+            </Button>
+          </Link>
+          <Link href="#services">
+            <Button rounded={"full"} px={6}>
+              Learn more
+            </Button>
+          </Link>
         </Stack>
         <Flex>
           <Image src={logo} boxSize="400px" alt="JessieHeartJace Logo" />

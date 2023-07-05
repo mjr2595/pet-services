@@ -13,6 +13,7 @@ import {
   Textarea,
   Stack,
   Center,
+  Link,
 } from "@chakra-ui/react";
 import { MdPhone, MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
@@ -67,11 +68,11 @@ const Contact = () => {
                 </Center>
               </FormControl>
               <Text pt={6}>Or call and leave a message</Text>
-              <a href={`tel:${phoneNumber}`}>
+              <Link href={`tel:${phoneNumber}`}>
                 <Button rightIcon={<MdPhone />} colorScheme="blue" variant="outline">
-                  Call us
+                  (512) 815-2561
                 </Button>
-              </a>
+              </Link>
             </VStack>
           </Box>
         </Box>
