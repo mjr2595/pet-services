@@ -38,7 +38,9 @@ const Footer = () => {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>Dog's are love. Dog's are life. 🩷</Text>
+        <Text>
+          <i>"Dogs are not our whole life, but they make our lives whole."</i> 🩷 - Roger Caras
+        </Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
