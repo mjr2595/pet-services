@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 const Hero = () => {
   return (
     <Container maxW={"5xl"}>
-      <Stack textAlign={"center"} align={"center"} spacing={{ base: 8, md: 10 }} py={{ base: 20, md: 28 }}>
+      <Stack textAlign={"center"} align={"center"} spacing={{ base: 8, md: 10 }} py={{ base: 6, md: 20 }}>
         <Heading fontWeight={600} fontSize={{ base: "3xl", sm: "4xl", md: "6xl" }} lineHeight={"110%"}>
           Let's spread some{" "}
           <Text as={"span"} color={"#FF65C3"}>

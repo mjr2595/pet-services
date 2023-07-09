@@ -51,7 +51,7 @@ const TestimonialText = ({ children }: { children: ReactNode }) => {
 const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string }) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Image src={src} mb={2} borderRadius={"lg"} boxSize="100px" objectFit="cover" />
+      <Image src={src} mb={2} borderRadius={"lg"} boxSize="150px" objectFit="cover" />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>

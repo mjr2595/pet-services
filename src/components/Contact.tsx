@@ -23,9 +23,9 @@ const Contact = () => {
 
   return (
     <>
-      <Container id="contact" bg="#BCD9FE" maxW="full" mt={0} p={12} centerContent overflow="hidden">
+      <Container id="contact" bg="#BCD9FE" maxW="full" mt={0} p={6} centerContent overflow="hidden">
         <Box bg="white" borderRadius="lg">
-          <Box m={8} color="#0B0E3F">
+          <Box m={{ base: 5, md: 10 }} color="#0B0E3F">
             <Container maxW={"7xl"} py={3} as={Stack} spacing={12}>
               <Stack spacing={0} align={"center"}>
                 <Heading>Contact</Heading>
