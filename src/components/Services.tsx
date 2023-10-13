@@ -1,4 +1,14 @@
-import { Box, Container, Heading, SimpleGrid, Icon, Text, Stack, HStack, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Icon,
+  Text,
+  Stack,
+  HStack,
+  VStack,
+} from "@chakra-ui/react";
 import { PiDogFill } from "react-icons/pi";
 
 const services = [
@@ -14,7 +24,7 @@ const services = [
   },
   {
     id: 3,
-    title: "30 minutes |  $20",
+    title: "30 minutes |  $25",
     text: "The perfect amount of time for a good walk, water refresh, and mealtime! Or a drop-in visit. Your choice!",
   },
   {
