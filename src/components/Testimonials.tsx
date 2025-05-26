@@ -1,8 +1,16 @@
 import { ReactNode } from "react";
-import { Box, Flex, Heading, Text, Stack, Container, useColorModeValue, Image } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Stack,
+  Container,
+  useColorModeValue,
+  Image,
+} from "@chakra-ui/react";
 import p1 from "../assets/pet-pics/dogandcat.png";
 import p2 from "../assets/pet-pics/jaxx.png";
-import p3 from "../assets/pet-pics/rubyandcooper.png";
 import p4 from "../assets/pet-pics/whitedogs.png";
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
@@ -42,16 +50,34 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
 
 const TestimonialText = ({ children }: { children: ReactNode }) => {
   return (
-    <Text textAlign={"center"} color={useColorModeValue("gray.600", "gray.400")} fontSize={"md"}>
+    <Text
+      textAlign={"center"}
+      color={useColorModeValue("gray.600", "gray.400")}
+      fontSize={"md"}
+    >
       {children}
     </Text>
   );
 };
 
-const TestimonialAvatar = ({ src, name, title }: { src: string; name: string; title: string }) => {
+const TestimonialAvatar = ({
+  src,
+  name,
+  title,
+}: {
+  src: string;
+  name: string;
+  title: string;
+}) => {
   return (
     <Flex align={"center"} mt={8} direction={"column"}>
-      <Image src={src} mb={2} borderRadius={"lg"} boxSize="150px" objectFit="cover" />
+      <Image
+        src={src}
+        mb={2}
+        borderRadius={"lg"}
+        boxSize="150px"
+        objectFit="cover"
+      />
       <Stack spacing={-1} align={"center"}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={"sm"} color={useColorModeValue("gray.600", "gray.400")}>
@@ -70,37 +96,46 @@ const Testimonials = () => {
           <Heading>Happy Pets, Happy People!</Heading>
           <Text>Don't just take my word for it :)</Text>
         </Stack>
-        <Stack direction={{ base: "column", md: "row" }} spacing={{ base: 10, md: 4, lg: 10 }}>
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          spacing={{ base: 10, md: 4, lg: 10 }}
+        >
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
-                “Such a kind person and great caregiver! Went above and beyond for us and gave our pets lots of love!”
+                “Such a kind person and great caregiver! Went above and beyond
+                for us and gave our pets lots of love!”
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar src={p1} name={"Human: Leah"} title={"Pets: Sturgill & Ginty"} />
+            <TestimonialAvatar
+              src={p1}
+              name={"Human: Leah"}
+              title={"Pets: Sturgill & Ginty"}
+            />
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>
-                “I’ve tried other sitters but Kendall is the only person I trust with Jaxx”
+                “I’ve tried other sitters but Kendall is the only person I trust
+                with Jaxx”
               </TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar src={p2} name={"Human: Georgia"} title={"Pet: Jaxx"} />
+            <TestimonialAvatar
+              src={p2}
+              name={"Human: Georgia"}
+              title={"Pet: Jaxx"}
+            />
           </Testimonial>
-          <Testimonial>
-            <TestimonialContent>
-              <TestimonialText>
-                “I said ‘Kendall’ and Cooper looked towards the front door, Ruby is a bit sad she definitely misses you!
-                Tells us that you're so good to them, thank you!”
-              </TestimonialText>
-            </TestimonialContent>
-            <TestimonialAvatar src={p3} name={"Humans: Nick & Noelia"} title={"Pets: Ruby & Cooper"} />
-          </Testimonial>
+
           <Testimonial>
             <TestimonialContent>
               <TestimonialText>"Kendall is the best!"</TestimonialText>
             </TestimonialContent>
-            <TestimonialAvatar src={p4} name={"Human: Brennen"} title={"Pets: Casper & Winter"} />
+            <TestimonialAvatar
+              src={p4}
+              name={"Human: Brennen"}
+              title={"Pets: Casper & Winter"}
+            />
           </Testimonial>
         </Stack>
       </Container>
